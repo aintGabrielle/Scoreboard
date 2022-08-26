@@ -1,0 +1,84 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: khaki;
+}
+
+.container{
+    width: 600px;
+    height: 350px;
+    background-color: #121227;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container .teams{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+}
+.container .teams h1{
+    font-size: 3em;
+}
+
+.container .scores{
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+}
+.container .scores h2{
+    font-size: 6em;
+    padding: 0;
+    margin: 0;
+    font-family: "Cursed Timer Ulil";
+    color: red;
+}
+.container .scores #home-score, #guest-score{
+    background-color: #000;
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+}
+.btn{
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.btn .btn-home, .btn-guest{
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.btn .btn-home #home-plus1, #home-plus2, #home-plus3{
+    background-color: #121227;
+    padding: 5px 15px;
+    font-size: 1.2em;
+    border: 1px solid white;
+    color: white;
+}
+.btn .btn-guest #guest-plus1, #guest-plus2, #guest-plus3{
+    background-color: #121227;
+    padding: 5px 15px;
+    font-size: 1.2em;
+    border: 1px solid white;
+    color: white;
+}
+.container #reset{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4em;
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
